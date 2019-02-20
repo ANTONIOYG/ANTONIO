@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static android.content.ContentValues.TAG;
 import static android.widget.Toast.LENGTH_LONG;
 
 public class registrar extends Activity {
@@ -27,24 +25,27 @@ public class registrar extends Activity {
         grabar = (Button) findViewById(R.id.grabar);
         limpiar =(Button) findViewById(R.id.limpiar);
 
-        id = (EditText) findViewById(R.id.id);
-        mes = (EditText) findViewById(R.id.mes);
-        dia = (EditText) findViewById(R.id.dia);
+        id = (EditText) findViewById(R.id.tid);
+        mes = (EditText) findViewById(R.id.tmes);
+        dia = (EditText) findViewById(R.id.tdia);
         hentrada = (EditText) findViewById(R.id.hentrada);
         hsalida = (EditText) findViewById(R.id.hsalida);
-        obra = (EditText) findViewById(R.id.obra);
+        obra = (EditText) findViewById(R.id.tobra);
         compi = (EditText) findViewById(R.id.compi);
 
         final Admin conn = new Admin(this);
+
+
         try{
             grabar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
+                    /* intent i = new intent(); */
                     SQLiteDatabase db = conn.getWritableDatabase();
 
                     ContentValues values = new ContentValues();
-                     values.put(estructura_db.COLID, id.getText().toString());
+                    values.put(estructura_db.COLID, id.getText().toString());
                     values.put(estructura_db.MES, mes.getText().toString());
                     values.put(estructura_db.DIA, dia.getText().toString());
                     values.put(estructura_db.ENTRADA, hentrada.getText().toString());
@@ -61,7 +62,9 @@ public class registrar extends Activity {
             });
         }catch(Exception e){
             Toast.makeText(getApplicationContext()," ERROR EN REGISTRAR ", LENGTH_LONG).show();
-        }
+        conn.close();
+
+         }
 
         limpiar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -22,6 +22,27 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
 
+        public void buscar(View view){
+
+            Intent i = new Intent(this,buscar.class);
+
+            startActivity(i);
+        }
+
+        public void actualizar(View view){
+
+            Intent i = new Intent(this,actualizar.class);
+
+            startActivity(i);
+        }
+
+        public void borrar(View view){
+
+            Intent i = new Intent(this,borrar.class);
+
+            startActivity(i);
+        }
+
         public void salir(View view){
 
             finish();
