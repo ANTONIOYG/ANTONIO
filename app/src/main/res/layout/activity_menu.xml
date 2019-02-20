@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minHeight="250dp"
-    tools:context=".buscar">
+    tools:context=".menu">
 
     <TextView
         android:id="@+id/menu"

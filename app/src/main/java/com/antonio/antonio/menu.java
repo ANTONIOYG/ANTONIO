@@ -3,11 +3,11 @@ package com.antonio.antonio;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class buscar extends AppCompatActivity {
+public class menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buscar);
+        setContentView(R.layout.activity_menu);
     }
 }

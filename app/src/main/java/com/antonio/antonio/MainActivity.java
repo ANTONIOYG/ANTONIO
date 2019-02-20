@@ -24,21 +24,21 @@ public class MainActivity extends AppCompatActivity {
 
         public void buscar(View view){
 
-            Intent i = new Intent(this,buscar.class);
+            Intent i = new Intent(this, menu.class);
 
             startActivity(i);
         }
 
         public void actualizar(View view){
 
-            Intent i = new Intent(this,actualizar.class);
+            Intent i = new Intent(this, menu.class);
 
             startActivity(i);
         }
 
         public void borrar(View view){
 
-            Intent i = new Intent(this,borrar.class);
+            Intent i = new Intent(this, menu.class);
 
             startActivity(i);
         }
