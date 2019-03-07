@@ -11,6 +11,11 @@
         android:id="@+id/menu"
         android:layout_width="147dp"
         android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="      MENU"
         android:textAllCaps="true"
         android:textColor="@android:color/holo_green_light"
@@ -18,186 +23,161 @@
         android:textStyle="bold|italic"
         android:typeface="serif"
         app:fontFamily="cursive"
-        app:layout_constraintBottom_toTopOf="@+id/tid"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/tid"
-        android:layout_width="122dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:id="@+id/id"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
+        android:hint="ID"
         android:inputType="textPersonName"
         android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/mes"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="75dp" />
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/tmes"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:id="@+id/mes"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
+        android:hint="MES"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/dia"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/tdia"
-        android:layout_width="wrap_content"
+        android:id="@+id/dia"
+        android:layout_width="116dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
         android:ems="10"
+        android:hint="DIA"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/hentrada"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="184dp" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/hentrada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
+        android:hint="ENTRADA"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/hsalida"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/hsalida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
+        android:hint="SALIDA"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/obra"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/tobra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:id="@+id/obra"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
+        android:hint="OBRA"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/compi"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/compi"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
+        android:hint="COMPANERO"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/borrar"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="391dp" />
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buscar"
-        android:layout_width="123dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="80dp"
         android:text="BUSCAR"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bmodi" />
 
     <Button
         android:id="@+id/bmodi"
-        android:layout_width="123dp"
-        android:layout_height="46dp"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="80dp"
         android:text="ACTUALIZAR"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="509dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/borrar" />
 
     <Button
         android:id="@+id/borrar"
-        android:layout_width="98dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_width="94dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="80dp"
         android:text="BORRAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="508dp" />
-
-    <TextView
-        android:id="@+id/tid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="ID"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <TextView
-        android:id="@+id/tmes"
-        android:layout_width="50dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="MES"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="139dp" />
-
-    <TextView
-        android:id="@+id/tdia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="DIA"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="196dp" />
-
-    <TextView
-        android:id="@+id/tentrada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="H.ENTRADA"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="246dp" />
-
-    <TextView
-        android:id="@+id/tsalida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="H.SALIDA"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="298dp" />
-
-    <TextView
-        android:id="@+id/tobra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="OBRA"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="351dp" />
-
-    <TextView
-        android:id="@+id/comp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:text="COMPAÑERO"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
