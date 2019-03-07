@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
+import android.widget.Toast;
 
 public class menu extends AppCompatActivity implements View.OnClickListener{
 
@@ -54,12 +55,15 @@ public class menu extends AppCompatActivity implements View.OnClickListener{
 
 
     private void Buscar() {
+        Toast.makeText(getApplicationContext(),"METODO BUSCAR",Toast.LENGTH_LONG).show();
     }
 
     private void aztualizar(){
+        Toast.makeText(getApplicationContext(),"METODO AZTUALIZAR",Toast.LENGTH_LONG).show();
     }
 
     private void Borrar() {
+        Toast.makeText(getApplicationContext(),"METODO BORRAR",Toast.LENGTH_LONG).show();
     }
 
 }
