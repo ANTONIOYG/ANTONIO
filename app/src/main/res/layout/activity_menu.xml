@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.818" />
 
     <EditText
         android:id="@+id/mes"
@@ -154,7 +154,7 @@
         android:layout_height="37dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="16dp"
         android:text="BUSCAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bmodi" />
@@ -163,9 +163,9 @@
         android:id="@+id/bmodi"
         android:layout_width="120dp"
         android:layout_height="37dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
         android:text="ACTUALIZAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/borrar" />
@@ -174,7 +174,7 @@
         android:id="@+id/borrar"
         android:layout_width="94dp"
         android:layout_height="37dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="16dp"
         android:text="BORRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
